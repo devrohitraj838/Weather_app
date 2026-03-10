@@ -13,12 +13,12 @@ body{
 
 }
 .container{
-    background: white;
+    background: linear-gradient(135deg,#c7edc3,#a2aaac,rgb(229, 245, 181));
     padding: 30px;
     border-radius: 15px;
     width: 320px;
     text-align: center;
-    box-shadow:0 10px 25px rgba(0,0,0,0.2);
+    box-shadow:0 10px 25px rgba(50, 25, 25, 0.2);
 }
 .container h1{
     margin-bottom: 20px;
@@ -54,4 +54,73 @@ body{
 }
 .weather-info p{
     margin-bottom: 12px;
+}
+
+/* Mobile Responsive Design */
+@media (max-width: 768px) {
+    body{
+        height: auto;
+        padding: 20px;
+    }
+    
+    .container{
+        width: 100%;
+        max-width: 400px;
+        padding: 20px;
+    }
+    
+    .container h1{
+        font-size: 24px;
+        margin-bottom: 15px;
+    }
+    
+    .search-box{
+        gap: 8px;
+        margin-bottom: 15px;
+    }
+    
+    .search-box input{
+        padding: 8px;
+        font-size: 16px;
+    }
+    
+    .search-box button{
+        padding: 8px 12px;
+        font-size: 14px;
+    }
+    
+    .weather-info{
+        font-size: 16px;
+    }
+    
+    .weather-info p{
+        margin-bottom: 10px;
+    }
+}
+
+@media (max-width: 480px) {
+    .container{
+        width: 100%;
+        padding: 15px;
+        border-radius: 10px;
+    }
+    
+    .container h1{
+        font-size: 20px;
+    }
+    
+    .search-box{
+        flex-direction: column;
+        gap: 8px;
+    }
+    
+    .search-box input,
+    .search-box button{
+        width: 100%;
+        padding: 10px;
+    }
+    
+    .weather-info{
+        font-size: 14px;
+    }
 }
